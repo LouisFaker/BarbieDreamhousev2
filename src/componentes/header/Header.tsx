@@ -5,8 +5,9 @@ import "./Header.css";
 export default function Header() {
   return (
     <header>
-      <div>
-        <h1>Logo</h1>
+      <div className="logo">
+        <img src="./public/logo-barbie.png" alt="Logo da Barbie" className="logo-img" />
+        <span className="logo-text">ㅤ</span>
       </div>
       <nav>
         <ul>
