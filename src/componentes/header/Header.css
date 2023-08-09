@@ -1,5 +1,5 @@
 header {
-  background-color: ;
+  background-color: rosybrown;
   display: flex;
   justify-content: space-between;
   padding: 0px 10vw;
@@ -17,7 +17,6 @@ header ul li a {
   border: 1px solid hotpink;
 }
 
-
 .logo {
   display: flex;
   align-items: center;
@@ -29,7 +28,7 @@ header ul li a {
 }
 
 .logo-text {
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 24px;
   font-weight: bold;
 }
