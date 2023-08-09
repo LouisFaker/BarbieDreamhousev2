@@ -54,9 +54,9 @@ function Footer() {
         <div className="rights">
           <div className="country">
             <p>España</p>
-            <img src="public/espana.png" alt="" className="espana" />
+            <img src="public/espana.png" alt="" className="logo" />
           </div>
-          <p>&copy; 2023 Barbie Airlines AB</p>
+          <p>&copy; 2023 Barbie Airlines</p>
         </div>
       </div>
     </footer>
