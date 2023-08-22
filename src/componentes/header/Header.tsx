@@ -8,7 +8,7 @@ export default function Header() {
       <div className="logo">
         <img
           src="./public/logo-barbie.png"
-          alt="Logo da Barbie"
+          // alt="Logo da Barbie"
           className="logo-img"
         />
         <span className="logo-text">ㅤ</span>
