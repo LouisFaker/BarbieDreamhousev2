@@ -14,7 +14,7 @@ function Footer() {
 
         <ul className="footer-menu">
           <p>Lugares para viajar</p>
-          <li className="footer-menu-item">Viaje junto a Barbie Dreamhouse</li>
+          <li className="footer-menu-item">Viaje junto a Barbie Dreamhousev2</li>
           <li className="footer-menu-item">Para Usted</li>
           <li className="footer-menu-item">Lineas Aereas</li>
           <li className="footer-menu-item">Marcas</li>
