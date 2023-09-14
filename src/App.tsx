@@ -1,17 +1,14 @@
+import './App.css'
 import Header from './componentes/header/Header'
 import Footer from './componentes/footer/Footer'
-import './App.css'
-import {Filme}  from './componentes/filme/Filme'
-
+import Main from './componentes/main/Main'
 function App() {
-
   return (
     <>
-    <Header/>
-    <Footer/>
-    <Filme/>
+      <Header/>
+      <Main/>
+      <Footer/>
     </>
   )
 }
-
 export default App
