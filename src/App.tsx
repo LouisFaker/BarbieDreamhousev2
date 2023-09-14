@@ -1,7 +1,7 @@
 import Header from './componentes/header/Header'
 import Footer from './componentes/footer/Footer'
 import './App.css'
-import { Filme } from './componentes/filme/Filme'
+import {Filme}  from './componentes/filme/Filme'
 
 function App() {
 
