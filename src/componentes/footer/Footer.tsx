@@ -4,7 +4,7 @@ function Footer() {
   return (
     <footer id="footer">
       <div className="footer-content">
-        <img src="./public/espana.png" alt="" className="logo" />
+        <img src="/espana.png" alt="" className="logo" />
         <ul className="footer-menu">
           <p>Empresa</p>
           <li className="footer-menu-item">Sobre</li>
@@ -54,7 +54,7 @@ function Footer() {
         <div className="rights">
           <div className="country">
             <p>España</p>
-            <img src="public/espana.png" alt="" className="logo2" />
+            <img src="/espana.png" alt="" className="logo2" />
           </div>
           <p>&copy; 2023 Barbie Airlines</p>
         </div>
