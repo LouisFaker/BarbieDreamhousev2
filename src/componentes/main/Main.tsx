@@ -62,7 +62,7 @@ export default function Main() {
                     Use algo do vetor para tentar criar os filmes 
                 */}
                 {
-                    filmes.filter((filme)=>filme.titulo.toLowerCase().includes(texto)).map(
+                    filmes.filter((filme)=>filme.titulo.toLowerCase().includes(texto.toLowerCase())).map(
                         (filme)=>
                             <Filme 
                                 key={filme.id}

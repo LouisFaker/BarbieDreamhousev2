@@ -12,6 +12,7 @@
 .footer-info-items{
     display: flex;
     gap: 11px;
+    list-style-type: none;
 }
 .footer-info{
     display: flex;
