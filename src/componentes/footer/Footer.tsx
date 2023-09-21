@@ -14,9 +14,9 @@ function Footer() {
 
         <ul className="footer-menu">
           <p>Lugares para viajar</p>
-          <li className="footer-menu-item">Viaje junto a Barbie Dreamhousev2</li>
+          <li className="footer-menu-item">Diviertase junto a Barbie Dreamhousev2</li>
           <li className="footer-menu-item">Para Usted</li>
-          <li className="footer-menu-item">Lineas Aereas</li>
+          <li className="footer-menu-item">Lineas de juguetes Barbie</li>
           <li className="footer-menu-item">Marcas</li>
           <li className="footer-menu-item">Fornecedores</li>
         </ul>
@@ -25,11 +25,11 @@ function Footer() {
           <p>Compra Segura</p>
           <li className="footer-menu-item">Soporte</li>
           <li className="footer-menu-item">Terminos y condiciones</li>
-          <li className="footer-menu-item">App movil gratis</li>
+          <li className="footer-menu-item"><a href="https://play.google.com/store/apps/details?id=com.budgestudios.googleplay.BarbieDreamhouse&hl=en_US">App Movil Gratis</a></li>
         </ul>
 
         <div className="socials">
-          <a href="https://www.instagram.com/louis._.airlines/" target="_blank">
+          <a href="https://www.instagram.com/ofc.barbiedreamhouse/" target="_blank">
             <i className="fa-brands fa-instagram"></i>
           </a>
           <a href="https://twitter.com/louis_airlines" target="_blank">
@@ -56,7 +56,7 @@ function Footer() {
             <p>España</p>
             <img src="/espana.png" alt="" className="logo2" />
           </div>
-          <p>&copy; 2023 Barbie Airlines</p>
+          <p>&copy; 2023 Barbie DreamHouse V2</p>
         </div>
       </div>
     </footer>

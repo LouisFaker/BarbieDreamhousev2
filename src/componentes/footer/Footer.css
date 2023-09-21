@@ -13,6 +13,7 @@
     display: flex;
     gap: 11px;
     list-style-type: none;
+    white-space: nowrap;
 }
 .footer-info{
     display: flex;
@@ -34,6 +35,18 @@
 #footer .footer-content .footer-menu .footer-menu-item {
   margin: 25px 0;
   transition: all 500ms ease;
+}
+
+#footer .footer-content .footer-menu .footer-menu-item a{
+  margin: 25px 0;
+  transition: all 500ms ease;
+  color: white;
+  text-decoration: none;
+}
+
+#footer .footer-content .footer-menu .footer-menu-item:hover a {
+  color: rgb(180, 0, 127);
+  cursor: pointer;
 }
 
 #footer .footer-content .footer-menu .footer-menu-item:hover {
@@ -77,6 +90,7 @@
   margin: 0 20px;
   font-size: 1.7rem;
   transition: all 500ms ease;
+  color: white;
 }
 
 .socials i:hover {
