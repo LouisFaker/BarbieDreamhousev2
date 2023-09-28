@@ -1,4 +1,4 @@
-import Link from "../link/link";
+import LinkNav from "../linknav/LinkNav";
 import "./Header.css";
 // import logo from "/logo-barbie.png" 
 // import Link from './../link/link';
@@ -19,14 +19,14 @@ export default function Header() {
       <nav>
         <ul>
           <li>
-            <Link texto="Home" />
-            <Link texto="imagenes" />
+            <Link url="/" texto="Home" />
+            <Link url="/imagenes" texto="imagenes" />
           </li>
           <li>
-            <Link texto="Sobre" />
+            <Link url="/sobre" texto="Sobre" />
           </li>
           <li>
-            <Link texto="Contacto" />
+            <Link url="/contacto" texto="Contacto" />
           </li>
           <li></li>
         </ul>
