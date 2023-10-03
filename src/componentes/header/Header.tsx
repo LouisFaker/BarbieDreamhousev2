@@ -19,14 +19,14 @@ export default function Header() {
       <nav>
         <ul>
           <li>
-            <Link url="/" texto="Home" />
-            <Link url="/imagenes" texto="imagenes" />
+            <LinkNav url="/" texto="Home" />
+            <LinkNav url="/imagenes" texto="imagenes" />
           </li>
           <li>
-            <Link url="/sobre" texto="Sobre" />
+            <LinkNav url="/sobre" texto="Sobre" />
           </li>
           <li>
-            <Link url="/contacto" texto="Contacto" />
+            <LinkNav url="/contacto" texto="Contacto" />
           </li>
           <li></li>
         </ul>
