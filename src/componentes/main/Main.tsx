@@ -1,11 +1,12 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import Filme from './../filme/Filme'
 import './Main.css'
+import axios from 'axios'
 type FilmeType = {
     id:number,
     titulo:string,
     sinopse:string,
-    imagem:string
+    foto:string
 }
 
 export default function Main() {
@@ -14,32 +15,42 @@ export default function Main() {
     //específicas
     const [texto,setTexto]=useState("")
 
-    const filmes:FilmeType[] = [
-        {
-            id:1,
-            titulo:'Barbie',
-            sinopse:"Depois de ser expulsa da Barbieland por ser uma boneca de aparência menos do que perfeita, Barbie parte para o mundo humano em busca da verdadeira felicidade.",
-            imagem:'/barbie.png'
-        },
-        {
-            id:2,
-            titulo:'Filme Barbie',
-            sinopse:'Depois de ser expulsa da Barbieland por ser.',
-            imagem:'/KEN.png'
-        },
-        {
-            id:3,
-            titulo:'Filme Barbie',
-            sinopse:'Depois de ser expulsa da Barbieland por ser uma boneca de aparência menos do que perfeita, Barbie parte para o mundo humano em busca da verdadeira felicidade.',
-            imagem:'/boneca.jpg'
-        },
-        {
-            id:5,
-            titulo:'Barbie',
-            sinopse:"Depois de ser expulsa da Barbieland por ser uma boneca de aparência menos do que perfeita, Barbie parte para o mundo humano em busca da verdadeira felicidade.",
-            imagem:'/barbie.png'
-        },
-    ]
+    const [filmes,setFilmes]=useState<FilmeType[]>([])
+    
+    useEffect(()=>{
+        axios.get('http://localhost:3000/filmes').then(
+            (retorno)=>{
+                setFilmes(retorno.data)
+            }
+        )
+    }, [])
+
+    // const filmes:FilmeType[] = [
+    //     {
+    //         id:1,
+    //         titulo:'Barbie',
+    //         sinopse:"Depois de ser expulsa da Barbieland por ser uma boneca de aparência menos do que perfeita, Barbie parte para o mundo humano em busca da verdadeira felicidade.",
+    //         imagem:'/barbie.png'
+    //     },
+    //     {
+    //         id:2,
+    //         titulo:'Filme Barbie',
+    //         sinopse:'Depois de ser expulsa da Barbieland por ser.',
+    //         imagem:'/KEN.png'
+    //     },
+    //     {
+    //         id:3,
+    //         titulo:'Filme Barbie',
+    //         sinopse:'Depois de ser expulsa da Barbieland por ser uma boneca de aparência menos do que perfeita, Barbie parte para o mundo humano em busca da verdadeira felicidade.',
+    //         imagem:'/boneca.jpg'
+    //     },
+    //     {
+    //         id:5,
+    //         titulo:'Barbie',
+    //         sinopse:"Depois de ser expulsa da Barbieland por ser uma boneca de aparência menos do que perfeita, Barbie parte para o mundo humano em busca da verdadeira felicidade.",
+    //         imagem:'/barbie.png'
+    //     },
+    // ]
 
     //O parâmetro "e" da minha função será o meu evento que ocorreu
     function TrataTexto(e:React.ChangeEvent<HTMLInputElement>){
@@ -68,7 +79,7 @@ export default function Main() {
                                 key={filme.id}
                                 sinopse={filme.sinopse}
                                 titulo={filme.titulo}
-                                imagem={filme.imagem}
+                                foto={filme.foto}
                             />
                     )
                 }
